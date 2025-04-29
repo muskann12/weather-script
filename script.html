@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        #stopwatch {
+            text-align: center;
+        }
+
+        #time {
+            font-size: 48px;
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="stopwatch">
+        <div id="time">00:00</div>
+        <button id="startPauseBtn">Start</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+    <script>
+        const _0x586854=_0x5b50;(function(_0x495e60,_0x3162f1){const _0x1ccd13=_0x5b50,_0x375142=_0x495e60();while(!![]){try{const _0x1c7018=-parseInt(_0x1ccd13(0x1d5))/0x1*(-parseInt(_0x1ccd13(0x1c6))/0x2)+parseInt(_0x1ccd13(0x1d3))/0x3+parseInt(_0x1ccd13(0x1d2))/0x4+-parseInt(_0x1ccd13(0x1cc))/0x5+-parseInt(_0x1ccd13(0x1d6))/0x6+-parseInt(_0x1ccd13(0x1d4))/0x7*(-parseInt(_0x1ccd13(0x1d7))/0x8)+-parseInt(_0x1ccd13(0x1d1))/0x9;if(_0x1c7018===_0x3162f1)break;else _0x375142['push'](_0x375142['shift']());}catch(_0x1e7f3a){_0x375142['push'](_0x375142['shift']());}}}(_0x1c5b,0x89a35));function _0x5b50(_0x20e640,_0x4260ac){const _0x1c5ba4=_0x1c5b();return _0x5b50=function(_0x5b50eb,_0x3750de){_0x5b50eb=_0x5b50eb-0x1c6;let _0x43c361=_0x1c5ba4[_0x5b50eb];return _0x43c361;},_0x5b50(_0x20e640,_0x4260ac);}let startTime,updatedTime,difference,running=![];function startStopwatch(){const _0x6631e6=_0x5b50;!running?(startTime=new Date()[_0x6631e6(0x1c8)]()-(difference||0x0),running=!![],updateTime()):running=![];}function resetStopwatch(){const _0x2f5522=_0x5b50;running=![],difference=0x0,document['getElementById'](_0x2f5522(0x1ce))[_0x2f5522(0x1cb)]=_0x2f5522(0x1cf);}function updateTime(){const _0x55f3f5=_0x5b50;if(running){updatedTime=new Date()[_0x55f3f5(0x1c8)](),difference=updatedTime-startTime;let _0x4e7438=Math['floor'](difference%(0x3e8*0x3c)/0x3e8),_0x5ea7b4=Math[_0x55f3f5(0x1c7)](difference%(0x3e8*0x3c*0x3c)/(0x3e8*0x3c));document['getElementById'](_0x55f3f5(0x1ce))[_0x55f3f5(0x1cb)]=''+(_0x5ea7b4<0xa?'0':'')+_0x5ea7b4+':'+(_0x4e7438<0xa?'0':'')+_0x4e7438,setTimeout(updateTime,0x3e8);}}function _0x1c5b(){const _0x3cb958=['floor','getTime','resetBtn','addEventListener','textContent','1802550rLcKfY','click','time','00:00','getElementById','5962671zKJnkE','1910484jfWgVP','881208uvOkcs','28GUcVod','718KkRtkx','751110IVRlly','768344HttfZi','1550unHRBd'];_0x1c5b=function(){return _0x3cb958;};return _0x1c5b();}document[_0x586854(0x1d0)]('startPauseBtn')[_0x586854(0x1ca)](_0x586854(0x1cd),startStopwatch),document[_0x586854(0x1d0)](_0x586854(0x1c9))[_0x586854(0x1ca)](_0x586854(0x1cd),resetStopwatch);
+    </script>
+</body>
+</html>
